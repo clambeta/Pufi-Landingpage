@@ -3,7 +3,7 @@ import './styles/FormEmail.scss'
 import { useForm, ValidationError } from '@formspree/react';
 
 const FormEmail= () => {  
-    const [state, handleSubmit] = useForm("https://formspree.io/f/xvoyzdko");
+    const [state, handleSubmit] = useForm("xvoyzdko");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
     }
