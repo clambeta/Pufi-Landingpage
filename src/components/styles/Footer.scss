@@ -22,6 +22,14 @@
     }
 }
 
+.horizontalLine {
+    border-color: lightgray;
+    border-width: 3px;
+    background-color: lightgray;
+    width: 100%;
+    height: 3px;
+}
+
 .firstCardFooter {
     @include flex-center;
     flex-direction: row;
@@ -158,3 +166,4 @@
     }
 
 }
+

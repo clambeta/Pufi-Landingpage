@@ -11,9 +11,9 @@ const Footer= () => {
 
     return (
         <>
-            <div className='footer'>           
+            <div className='footer'>    
+            <div className='horizontalLine'></div>       
                 <footer className='footer-container'>
-
                     <div className='cardFooter'>
                         <div className='firstCardFooter'>
                             <div className='logo-black'>

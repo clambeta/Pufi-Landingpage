@@ -24,7 +24,7 @@ const FormEmail= () => {
                     field="email"
                     errors={state.errors}
                 />
-                <button type="submit" disabled={state.submitting}>
+                <button className='buttonMail' type="submit" disabled={state.submitting}>
                     -&gt;
                 </button>
             </div>
