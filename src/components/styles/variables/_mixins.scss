@@ -1,0 +1,56 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin ul-li-a {
+
+    ul {
+        @include flex-center;
+        margin-right: 3rem;
+        list-style: none;
+        font-size: larger;
+        font-weight: 400;
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: $header-color;
+                margin: 1rem;
+            }
+        }
+    }    
+}
+
+@mixin ul-li {
+
+    ul {
+        li {
+        @include flex-center;
+        margin-right: 3rem;
+        list-style: none;
+        font-size: small;
+        font-weight: 400;
+        text-decoration: none;
+        color: white
+        }
+    }    
+}
+
+@mixin a {
+    text-decoration: none;
+    color: $header-color;
+    margin: 1rem;
+    font-size: small;    
+}
+
+@mixin li-a {
+    li {
+        a {
+            text-decoration: none;
+            color: $header-color;
+            margin: 1rem;
+        }
+    }
+}

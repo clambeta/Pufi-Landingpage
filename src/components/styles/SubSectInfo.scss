@@ -1,0 +1,67 @@
+@import './variables/colors';
+@import './variables/mixins';
+@import './variables/fonts';
+
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-Content: center;
+}
+
+.infoSubCard {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-Content: center;
+}
+
+.infoImg {
+    object-fit: contain;
+    display: flex;
+    aspect-ratio: 1;
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    justify-items: auto;
+}
+
+.infoProduct {
+    align-items: center;
+    justify-Content: center;
+    font-size: 50px;
+}
+
+.horizLine {
+    display: flex;
+    width: 50pX;
+    height: 2px;
+    border-width: 2px;
+    border-color: black;
+    background-color:  black;
+    margin-bottom: 20px;
+}
+
+.infoStatus {
+    align-items: center;
+    justify-Content: center;
+}
+
+.infoLink {
+    margin-top: 50pX;
+    align-items: center;
+    justify-Content: center;
+}
+
+
+
+
+
+
+
+
+
