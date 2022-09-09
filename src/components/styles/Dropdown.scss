@@ -1,0 +1,68 @@
+@import '@coreui/coreui/dist/css/coreui.min.css';
+
+
+$dropdown-min-width:                10rem;
+$dropdown-padding-x:                0;
+$dropdown-padding-y:                .5rem;
+$dropdown-spacer:                   .125rem;
+$dropdown-font-size:                small;
+$dropdown-color:                    rgb(200,200,200);
+$--cui-dropdown-bg:                   transparent;
+$dropdown-bg:                transparent;
+$dropdown-link-color:               rgb(200,200,200);
+$--cui-navbar-color: white;
+$navbar-color:white;
+$--cui-nav-link-color: white;
+$nav-link-color: white;
+
+
+
+
+/* 
+
+$dropdown-border-color:             var(--cui-border-color-translucent);
+$dropdown-border-radius:            $border-radius;
+$dropdown-border-width:             $border-width;
+$dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width);
+$dropdown-divider-bg:               $dropdown-border-color;
+$dropdown-divider-margin-y:         $spacer * .5;
+$dropdown-box-shadow:               $box-shadow;
+
+
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg:            $gray-200;
+
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+
+$dropdown-link-disabled-color:      $gray-500;
+
+$dropdown-item-padding-y:           $spacer * .25;
+$dropdown-item-padding-x:           $spacer;
+
+$dropdown-header-color:             $gray-600;
+$dropdown-header-padding-x:         $dropdown-item-padding-x;
+$dropdown-header-padding-y:         $dropdown-padding-y;
+// fusv-disable
+$dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v4.2.0
+// fusv-enable
+ */
+
+.toggle {
+color: white;
+font-size: larger;
+}
+
+.dropDownMenu {
+    background-color: transparent;
+    border-width: 0px;
+}
+.nav-link {
+    display: block;
+    padding: var(--cui-nav-link-padding-y) var(--cui-nav-link-padding-x);
+    font-size: small;
+    font-weight: var(--cui-nav-link-font-weight);
+    color: white;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}

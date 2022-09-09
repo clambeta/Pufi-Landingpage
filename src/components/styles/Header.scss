@@ -1,0 +1,98 @@
+@import '@coreui/coreui/dist/css/coreui.min.css';
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/mixins';
+
+
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 30px;
+    border: 0px;
+    background-color: transparent;
+
+    .nav-container {  
+        @include flex-center;     
+        justify-content: space-between;
+        font-family: sans-serif;
+        width: 100%;
+    }
+}
+
+.cardHeader{
+    @include flex-center;
+    flex-direction: column; 
+}
+
+.verticalLine {
+    display: flex;
+    position: relative;
+    //right: 0;
+    background-color:  white;
+    width: 1px;
+    height: 75px;
+}
+.logo-pufi{
+    margin-left: 5%;
+    position:sticky;
+    width: 33%;
+}
+
+.menu {
+    @include ul-li-a;
+    @include flex-center;
+    width: 33%;
+
+
+    .card-icon  {
+        @include flex-center;
+        font-size: 50px;
+        color: white;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountShopBox {
+    @include flex-center;
+    flex-direction: row-reverse;
+    width: 33%;
+    margin-left: auto;
+}
+
+.account-shop {
+    @include flex-center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    font-size: small;
+    list-style: none;
+    text-decoration: none;
+    @include ul-li
+}
+
+.shop {
+    @include flex-center;
+    @include li-a;
+    flex-direction: row;
+    margin-left: 1re;
+    font-size: small;
+}
+
+.verticalLineA {
+    position: relative;
+    background-color:  white;
+    width: 1px;
+    height: 30px;
+
+}
+
+.compra {
+    @include a;
+}
+

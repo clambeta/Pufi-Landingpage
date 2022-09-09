@@ -1,0 +1,160 @@
+@import '@coreui/coreui/dist/css/coreui.min.css';
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/mixins';
+
+
+
+.footer {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 100px;
+    border-top: 3px;
+    border-color: lightgray;
+    background-color: transparent;
+
+    .footer-container {  
+        @include flex-center;     
+        justify-content: space-between;
+        font-family: sans-serif;
+        width: 100%;
+    }
+}
+
+.firstCardFooter {
+    @include flex-center;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+   
+}
+
+.secondCardFooter {
+    @include flex-center;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+   
+}
+.thirdCardFooter {
+    text-decoration: none;
+    outline: none;
+    font-size: small;
+    font-weight: 800;
+    color: black;
+
+    
+   
+}
+.fourthCardFooter {
+    display: flex;
+   
+    justify-content:space-around;
+    width: 100%;
+
+    p{
+        flex-direction: row;
+        text-decoration: none;
+        outline: none;
+        font-size: small;
+        font-weight: 800;
+        color: black;
+    }
+}
+
+.media {
+    margin-right: 5rem;
+    list-style: none;
+    font-size: larger;
+    font-weight: 400;
+    @include flex-center;
+    width: 100%;
+
+
+    .link  {
+        @include flex-center;
+        font-size: 50px;
+        color: black;
+    }
+}
+
+
+.logo-black{
+    display: flex;
+    margin-left: 0%;
+    position:relative;
+    width: 33%;
+}
+
+.listProducts{
+    @include flex-center;
+    flex-direction: column; 
+    
+}
+
+
+.card-ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    margin-right: 0;
+
+    .products {
+        li{
+            list-style: none;
+            a {
+                text-decoration: none;
+                outline: none;
+                font-size: small;
+                font-weight: 800;
+                color: black;
+            } 
+        }  
+    }
+    .contacto {
+        li{
+            list-style: none;
+            a {
+                text-decoration: none;
+                outline: none;
+                font-size: small;
+                font-weight: 800;
+                color: black;
+            } 
+        }
+
+    }
+}
+
+.verticalLine {
+    display: flex;
+    position: relative;
+    //right: 0;
+    background-color:  lightgray;
+    width: 2px;
+    height: 75px;
+}
+
+.copywrite {
+    font-size: 10px;
+    color: gray;
+    margin-left: 20px;
+}
+
+.media {
+    width: 70%;
+    @include flex-center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    p {
+        display: block;
+    }
+    
+    a {
+        display: block;
+        color: black;
+    }
+
+}

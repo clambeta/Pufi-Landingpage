@@ -1,0 +1,44 @@
+@import './variables/colors';
+@import './variables/mixins';
+@import './variables/fonts';
+
+
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-Content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.network {  
+    .instagram {
+        a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #978888;
+         }
+    } 
+}
+
+.numeral {
+    p{
+        a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+            font-family: sans-serif;
+            font-size: 40px;
+            color: black;
+         }
+    }
+}
+
+
+

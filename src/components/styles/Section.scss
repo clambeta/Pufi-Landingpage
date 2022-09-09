@@ -1,0 +1,142 @@
+@import './variables/colors';
+@import './variables/mixins';
+@import './variables/fonts';
+
+
+section {
+    // height: 200vh;
+    // margin: 15px;
+    overflow: hidden;
+    font-family: sans-serif;
+    
+}
+
+.slide {
+    position: relative;
+    @include flex-center;
+    justify-content: center;
+
+.slides {
+
+    img {
+        width: 1905px;
+        height: 100vh;
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+        
+    }
+}
+
+.back {
+    position: absolute;
+    left: 1%;
+    color: $main-color;
+    cursor: pointer;
+}
+.forward {
+    position: absolute;
+    right: 1%;
+    color: $main-color;
+    cursor: pointer;
+
+}
+
+.product {
+    position: absolute;
+    width: 40%; 
+    font-size: 4rem;
+    left: 30%;
+    top: 50%;
+    color: $main-color;
+    font-weight: 400;
+    text-shadow: 10px 0px 30px $header-color;
+    text-align: center;
+    
+}
+
+.status {
+    position: absolute;
+    width: 40%; 
+    top: 70%;
+    left: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: $main-color;
+    
+}
+
+.data-items {
+    display: 'flex';
+    align-items: center;
+    justify-Content: center,
+}
+
+.slideCard {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-Content: center,
+}
+
+.buttons {
+    display: block;
+    position: absolute;
+    top: 85%;
+    bottom: 25%;
+    
+
+    button {
+        padding: 10px 30px;
+        border: 3px solid $main-color;
+        color: $main-color;
+        text-transform: uppercase;
+        margin: 1rem;
+        cursor: pointer;
+        font-weight: bolder;
+        background-color: transparent;
+
+        &:hover{
+            background-color: $main-color;
+            color: $header-color;
+            transition: 1s;
+            transform: scale(120%);
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    section {
+        width: 760px;
+    }
+
+    .slides {
+
+        img {
+            width: 1240px;
+            height: 90vh;
+            object-fit: cover;
+            
+        }
+        
+        .product {
+            position: absolute;
+            font-size: 3rem;
+            left: 10%;
+            top: 50%;
+            color: $main-color;
+            font-weight: 900;
+            text-shadow: 10px 0px 30px $header-color;
+            
+        }
+        .status {
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            font-size: 14px;
+            color: $main-color;
+            
+        }
+        }
+        
+}
