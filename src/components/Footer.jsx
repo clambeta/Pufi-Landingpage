@@ -75,14 +75,14 @@ const Footer= () => {
                     <div className='cardFooter'>
                         <div className='fourthCardFooter'>                            
                                 <div className="media">
-                                    <p> SÍGUENOS EN</p>
-                                    <Link to='/'>
+                                    <p> SÍGUENOS EN  </p>
+                                    <Link className="icon" to='/'>
                                         <Facebook/>
                                     </Link>
-                                    <Link to='/'>
+                                    <Link className="icon" to='/'>
                                         <Twitter/>
                                     </Link>
-                                    <Link to='/'>
+                                    <Link className="icon" to='/'>
                                         <Instagram/>
                                     </Link>               
                                 </div>                           
